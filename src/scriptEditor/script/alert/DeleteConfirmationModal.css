@@ -1,0 +1,77 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #ffffff;
+  width: 400px; 
+  padding: 16px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+  border-radius: 4px; 
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.modal-title {
+  margin: 0;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px; 
+}
+
+.modal-body {
+  padding: 20px 0; 
+  font-size: 14px; 
+  color: #555; 
+  margin-bottom: 20px; 
+  border-bottom: none; 
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+  padding-bottom: 10px; 
+}
+
+.modal-footer .button {
+  border: 1px solid #ccc; 
+  padding: 5px 20px;
+  margin-left: 10px;
+  border-radius: 2px;
+  cursor: pointer;
+  font-weight: bold; 
+}
+
+.button-save {
+  background-color: #ffffff; 
+  color: #000000;
+  border: #8a736f;
+}
+
+.button-dont-save {
+  background-color: #ffffff;
+  color: #000000;
+  border: #8a736f;
+}
+
+.button-cancel {
+  background-color: #f1f1f1; 
+  color: #333;
+}

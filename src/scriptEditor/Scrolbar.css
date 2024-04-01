@@ -1,0 +1,43 @@
+/* 스크롤바 전체 스타일 */
+::-webkit-scrollbar {
+    width: 12px; /* 스크롤바의 너비 */
+  }
+  
+  /* 스크롤바 트랙 (바닥 부분) 스타일 */
+  ::-webkit-scrollbar-track {
+    background: #1e1e1e; /* 트랙의 배경 색상 */
+  }
+  
+  /* 스크롤바 핸들 (움직이는 부분) 스타일 */
+  ::-webkit-scrollbar-thumb {
+    background-color: #555; /* 핸들의 배경 색상 */
+    border-radius: 6px; /* 핸들의 둥근 모서리 */
+    border: 3px solid #2e2e2e; /* 핸들 주위의 테두리와 테두리 색상 */
+  }
+  
+  /* 호버시 스크롤바 핸들 스타일 */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3e3e3e; /* 호버시 핸들의 배경 색상 */
+  }
+  /* 스크롤바 전체 스타일 */
+::-webkit-scrollbar {
+    width: 8px; /* 스크롤바의 너비 */
+  }
+  
+  /* 스크롤바 트랙 (바닥 부분) 스타일 */
+  ::-webkit-scrollbar-track {
+    background: #000000; /* 트랙의 배경 색상 */
+  }
+  
+  /* 스크롤바 핸들 (움직이는 부분) 스타일 */
+  ::-webkit-scrollbar-thumb {
+    background-color: #222121; /* 핸들의 배경 색상 */
+    border-radius: 0; /* 각진 모서리 */
+    border:  #222121; /* 핸들 주위의 테두리와 테두리 색상 */
+  }
+  
+  /* 호버시 스크롤바 핸들 스타일 */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3e3e3e; /* 호버시 핸들의 배경 색상 */
+  }
+  

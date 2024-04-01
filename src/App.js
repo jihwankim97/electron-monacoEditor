@@ -1,9 +1,10 @@
+import ScriptEditorMain from "./scriptEditor/ScriptEditor.Main";
 
 
 function App() {
   return (
     <div >
-    hi
+    <ScriptEditorMain />
     </div>
   );
 }

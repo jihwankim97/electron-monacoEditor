@@ -1,0 +1,34 @@
+const system = {
+    readFile: async (path = null, option = null) => {
+        return window.system.readFile(path, option);
+    },
+    writeFile: async (path = null, data = null, option = null) => {
+        return window.system.writeFile(path, data, option);
+    },
+    showOpenDialog: (option = { properties: ['openFile', 'multiSelections'] }) => window.system.showOpenDialog(option),
+    existsSync: (path = null) => window.system.existsSync(path),
+    readFileSync: (path = null) => window.system.readFileSync(path),
+    unlinkSync: (path = null) => window.system.unlinkSync(path),
+    savePNG: (path = null, payload = null) => {
+        return window.system.savePNG(path, payload);
+    },
+    mkdirSync: (path = null, option = null) => {
+        return window.system.mkdirSync(path, option);
+    },
+    writeFileSync: (path = null, data = null, option = null) => {
+        return window.system.writeFileSync(path, data, option);
+    },
+    readdir: (path = null, option = null) => {
+        return window.system.readdir(path, option);
+    },
+    readdirSync: (path = null, option = { encoding: 'utf8', withFileTypes: true }) => {
+        return window.system.readdirSync(path, option);
+    },
+    copyFileSync: (srcPath = null, desPath = null) => window.system.copyFileSync(srcPath, desPath),
+    getAppDataPath: () => {
+        return window.system.getAppDataPath();
+    },
+    stat: (path, option) => window.system.stat(path, option)
+}
+
+export default system;

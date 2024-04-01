@@ -1,0 +1,19 @@
+.file-name {
+    cursor: pointer;
+    user-select: none;
+    color: gray;
+    display: flex; 
+    align-items: center; 
+  }
+  
+  .file-name:hover {
+    color: white;
+  }
+  
+  .file-name.selected {
+    color: white;
+  }
+
+  .file-name.currentTab {
+    color: #58FAF4;
+  }

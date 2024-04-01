@@ -1,0 +1,6 @@
+.ScriptEditor {
+  width: 100%;
+  height: calc(100% - 30px);
+  overflow-x: hidden;
+  overflow-y: hidden;
+}

@@ -1,20 +1,21 @@
-const { app, BrowserWindow, ipcMain } = require('electron');
+const { app, globalShortcut } = require("electron");
 
+const createWindow = require("./createWindow.js");
+const createTerminal = require("./createTerminal.js");
 
-let mainWindow;
+app.once("ready", () => {
+  //module load
+  require("./apis.js").init();
 
-function createWindow() {
-  mainWindow = new BrowserWindow({
-    webPreferences: {
-      nodeIntegration: false,
-      contextIsolation: true,
-      enableRemoteModule: false,
-      preload: `${__dirname}/preload.js` 
-    }
-  });
+  createWindow(1280, 720);
+  createTerminal();
+});
 
-  mainWindow.loadURL('http://localhost:3000');
+// 앱이 종료될 때 전역 단축키 등록을 해제.
+app.on("will-quit", () => {
+  globalShortcut.unregisterAll();
+});
 
-}
-
-app.on('ready', createWindow);
+app.on("window-all-closed", () => {
+  if (process.platform !== "darwin") app.quit();
+});

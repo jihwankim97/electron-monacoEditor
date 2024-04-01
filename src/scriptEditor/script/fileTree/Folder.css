@@ -1,0 +1,15 @@
+.folder-name {
+    cursor: pointer;
+    user-select: none;
+    color: #F7D358;
+    display: flex; 
+    align-items: center; 
+  }
+  
+  .folder-name:hover {
+    color: white;
+  }
+  
+  /* .folder-name.selected {
+    color: white;
+  } */

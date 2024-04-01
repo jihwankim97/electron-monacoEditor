@@ -1,0 +1,37 @@
+.split-flex {
+  display: flex;
+  height: calc(100vh - 18px); /* 화면의 전체 높이를 차지하도록 설정 */
+}
+
+.panel {
+  background-color: #1d1d1d;
+  overflow-y: auto; /* 내용이 많아지면 스크롤 생성 */
+  overflow-x: hidden;
+}
+
+.split-flex > .gutter, .split-flex-inner > .gutter {
+  background-color: #333; /* 구텨(분할 바)의 배경색 */
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.split-flex > .gutter.gutter-horizontal, .split-flex-inner > .gutter.gutter-horizontal {
+  cursor: col-resize; /* 수평 분할 바에 마우스를 올리면 커서 모양 변경 */
+}
+
+/* 수직 구텨에 대한 스타일 */
+.split-flex-inner > .gutter.gutter-vertical {
+  cursor: row-resize; /* 수직 분할 바에 마우스를 올리면 커서 모양 변경 */
+}
+
+/* 마우스 오버 시 스타일 */
+.split-flex > .gutter:hover, .split-flex-inner > .gutter:hover {
+  background-color: #212c36; /* 마우스 오버시 배경색 */
+}
+
+/* 내부 분할 패널에 대한 추가 스타일 */
+.split-flex-inner {
+  display: flex;
+  flex-direction: column; /* 내부 분할을 수직으로 설정 */
+  
+}

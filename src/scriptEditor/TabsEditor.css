@@ -1,0 +1,53 @@
+/* tabsStyle.css */
+.react-tabs {
+    font-family: 'Consolas', 'Monaco', monospace; 
+  }
+  
+  .react-tabs__tab-list {
+    border-bottom: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #333; 
+  }
+  
+  .react-tabs__tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    user-select: none;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    color: #bbb; /* Light text color for non-active tabs */
+    border: none;
+  }
+  
+  .react-tabs__tab--selected {
+    background-color: #f0ad4e; /* Highlight color for the active tab */
+    color: #fff; /* White text color for the active tab */
+    border-radius: 3px 3px 0 0; /* Slight rounding on the top corners */
+  }
+  
+  .react-tabs__tab:focus {
+    box-shadow: none; /* Remove focus outline or adjust as needed */
+    border-color: transparent;
+  }
+  
+  .react-tabs__tab-panel {
+    display: none;
+  }
+  
+  .react-tabs__tab-panel--selected {
+    display: block;
+    background-color: #282c34; /* Dark background for the content area */
+    color: #abb2bf; /* Light text color for the content */
+    padding: 20px; /* Spacing inside the content area */
+    min-height: 200px; /* Minimum content area height */
+  }
+  
+  /* Optional: Add transition for the tab hover effect */
+  .react-tabs__tab:hover:not(.react-tabs__tab--selected) {
+    background-color: #444; /* Darker background for hover on non-active tabs */
+  }
+  

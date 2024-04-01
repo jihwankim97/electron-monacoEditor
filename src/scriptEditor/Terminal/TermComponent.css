@@ -1,0 +1,7 @@
+/* App.css 또는 TermComponent 컴포넌트에 적용할 스타일 */
+.terminal-container {
+    width: 100%;
+    height: 100vh; /* 뷰포트 높이의 100% */
+    display: flex;
+  }
+  
