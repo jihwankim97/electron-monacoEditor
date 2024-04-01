@@ -1,0 +1,51 @@
+{
+  "name": "my-electron-app",
+  "version": "0.1.0",
+  "main": "electron/electron.js",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "react-start": "react-scripts start",
+    "electron-start": "electron .",
+    "start": "concurrently \"npm:watch\" \"npm:electron-wait\"",
+    "watch": "react-scripts start",
+    "electron-wait": "wait-on  http://127.0.0.1:3000  && electron .",
+    "react-build": "react-scripts build",
+    "electron-build": "electron-builder build",
+    "prebuild-electron": "npm run build",
+    "build-all": "npm run react-build && npm run electron-build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "electron": "^29.1.6",
+    "electron-builder": "^24.13.3",
+    "electron-rebuild": "^3.2.9",
+    "wait-on": "^7.2.0"
+  }
+}
