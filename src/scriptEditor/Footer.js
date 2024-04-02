@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="editor-footer">
       <div className="footer-content">
-        <div className="footer-item">GRAPICAR STUDIO</div>
+        <div className="footer-item">MY STUDIO</div>
         <div className="footer-item">Script Editor</div>
         <div className="footer-item">v1.0.0</div>
         <div className="footer-item"></div>
