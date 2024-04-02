@@ -1,47 +1,86 @@
-My Electron App
-This project is a robust desktop application built with Electron, integrating React for the UI, alongside other powerful technologies like @emotion for styling, recoil for state management, and monaco-editor for code editing features.
+<div align="center">
+  <a href="https://electronjs.org/" target="_blank"><img src="https://electronjs.org/images/electron-logo.svg" width="200" alt="Electron Logo" /></a>
+</div>
+<h3 align="center">Electron Monaco Editor</h3>
+<p align="center">
+A powerful Electron app integrating Monaco Editor for a seamless code editing experience.
+<br />
+Explore the docs »
+<br />
+<a href="https://github.com/your-username/electron-monaco-editor/issues">Report Bug</a>
+·
+<a href="https://github.com/your-username/electron-monaco-editor/issues">Request Feature</a>
+</p>
+<div align="center">
+</div>
 
-Features
-Modern React UI with Material-UI components
-Integrated terminal with node-pty
-Advanced code editor with monaco-editor
-State management using recoil
-Custom styling with @emotion/styled and styled-components
+About The Project
+electron-monaco-editor is an Electron-based application designed to provide developers with a robust code editor using Monaco Editor. It incorporates modern web technologies such as React for UI, and @emotion/react for styled components, making development smooth and enjoyable.
+
+Built With
+Electron
+React
+Monaco Editor
+Recoil
+@emotion/react
+Material-UI
 Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+To get a local copy up and running follow these simple steps.
 
 Prerequisites
-Before you begin, ensure you have the latest version of npm and Node.js installed on your system. This project was built with Node.js version 14.x or newer.
 
-Installation
-Clone the repository:
-bash
-Copy code
-git clone https://github.com/your-username/my-electron-app.git
-cd my-electron-app
-Install the dependencies:
-bash
-Copy code
-npm install
-Start the development server:
-bash
-Copy code
-npm run start
-This command will concurrently run the React app and Electron.
+clone
+```bash
+git clone https://github.com/jihwankim97/electron-monacoEditor.git
+```
 
-Building the Application
-To build the application for production, run:
+npm
+```bash
+$ npm install
+```
+Prerequisites
+Before running node-pty in your Electron app, ensure you have the following prerequisites installed:
 
-bash
-Copy code
-npm run build-all
-This will generate the React build and package your Electron application.
+Node.js: It's essential to use a version of Node.js that is compatible with your Electron version. You can find this information in the Electron documentation for your specific version.
 
+npm or yarn: These are Node.js package managers. You will need one of them to install node-pty and other dependencies.
+
+Python: node-pty uses node-gyp for native builds, which requires Python. Make sure you have Python version 2.7, or 3.5–3.8 installed. Later versions might not be compatible with node-gyp.
+
+A C++ compiler toolchain: node-pty contains native code that needs to be compiled. On Windows, this could be Visual Studio Build Tools. On macOS and Linux, this is typically GCC or Clang. If you are on a Mac, the easiest way to get these tools is by installing Xcode Command Line Tools by running xcode-select --install in the terminal.
+
+After ensuring that these prerequisites are in place, you can proceed with the installation and running of node-pty within your Electron application.
+
+electron-rebuild
+```bash
+.\node_modules\.bin\electron-rebuild.cmd
+```
+start
+```bash
+npm start
+```
 Usage
-After starting the application, you can explore its features, such as editing scripts with the monaco-editor, managing application state with recoil, and more.
+Use this space to show useful examples of how a project can be used. Additional screenshots, code examples, and demos work well in this space.
+
+Roadmap
+See the open issues for a list of proposed features (and known issues).
 
 Contributing
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+
+License
+Distributed under the MIT License. See LICENSE for more information.
+
+Contact
+Project Link: https://github.com/jihwankim97/electron-monacoEditor
+
+<!-- Markdown links & images -->
+
+
+Contributing
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+
+If you have a suggestion that would make this better, please fork the repository and create a pull request. You can also simply open an issue with the tag "enhancement". Don't forget to give the project a star! Thanks again!
 
 Fork the Project
 Create your Feature Branch (git checkout -b feature/AmazingFeature)
@@ -49,10 +88,6 @@ Commit your Changes (git commit -m 'Add some AmazingFeature')
 Push to the Branch (git push origin feature/AmazingFeature)
 Open a Pull Request
 License
-Distributed under the MIT License. See LICENSE for more information.
+Distributed under the MIT License. See LICENSE file for more information.
 
-Contact
-Your Name - @your_twitter
-
-Project Link: https://github.com/your-username/my-electron-app
-
+Project Link: https://github.com/your-username/electron-monaco-editor
