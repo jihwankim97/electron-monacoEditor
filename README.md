@@ -7,9 +7,9 @@ A powerful Electron app integrating Monaco Editor for a seamless code editing ex
 <br />
 Explore the docs »
 <br />
-<a href="https://github.com/your-username/electron-monaco-editor/issues">Report Bug</a>
+<a href="https://github.com/jihwankim97/electron-monaco-editor/issues">Report Bug</a>
 ·
-<a href="https://github.com/your-username/electron-monaco-editor/issues">Request Feature</a>
+<a href="https://github.com/jihwankim97/electron-monaco-editor/issues">Request Feature</a>
 </p>
 <div align="center">
   <img src="/public/EditorScreenshot.png" alt="Electron Monaco Editor Screenshot">
