@@ -7,15 +7,16 @@ A powerful Electron app integrating Monaco Editor for a seamless code editing ex
 <br />
 Explore the docs »
 <br />
-<a href="https://github.com/your-username/electron-monaco-editor/issues">Report Bug</a>
+<a href="https://github.com/jihwankim97/electron-monacoEditor/issues">Report Bug</a>
 ·
-<a href="https://github.com/your-username/electron-monaco-editor/issues">Request Feature</a>
+<a href="https://github.com/jihwankim97/electron-monacoEditor/issues">Request Feature</a>
 </p>
 <div align="center">
+  <img src="/public/EditorScreenshot.png" alt="Electron Monaco Editor Screenshot">
 </div>
 
 About The Project
-electron-monaco-editor is an Electron-based application designed to provide developers with a robust code editor using Monaco Editor. It incorporates modern web technologies such as React for UI, and @emotion/react for styled components, making development smooth and enjoyable.
+electron-monaco-editor is an Electron-based application designed  with a code editor using Monaco Editor. It incorporates modern web technologies such as React for UI, and @emotion/react for styled components, making development.
 
 Built With
 Electron
@@ -55,6 +56,8 @@ electron-rebuild
 ```bash
 .\node_modules\.bin\electron-rebuild.cmd
 ```
+If the command .\node_modules\.bin\electron-rebuild.cmd does not work, please refer to https://www.electronjs.org/docs/latest/tutorial/using-native-node-modules for guidance.
+
 start
 ```bash
 npm start
