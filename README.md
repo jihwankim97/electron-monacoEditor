@@ -90,4 +90,4 @@ Open a Pull Request
 License
 Distributed under the MIT License. See LICENSE file for more information.
 
-Project Link: https://github.com/your-username/electron-monaco-editor
+Project Link: https://github.com/jihwankim97/electron-monacoEditor
