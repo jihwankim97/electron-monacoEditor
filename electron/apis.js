@@ -1,7 +1,6 @@
 const { ipcMain } = require("electron");
 const fs = require("fs");
 const { readDirectory } = require("./scriptApi/readDirStructure.cjs");
-
 const apis = {
   init: () => {
     ipcMain.handle("fs:writeFile", async (e, ...args) =>

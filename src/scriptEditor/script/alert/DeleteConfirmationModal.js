@@ -12,7 +12,7 @@ function DeleteConfirmationModal({ targetTiTle, isOpen, onClose, onSave, onDontS
             <div className="modal" role="dialog" aria-modal="true">
                 <div className="modal-header">
                     
-                    <h5 className="modal-title">Grapicar Studio</h5>
+                    <h5 className="modal-title">My Studio</h5>
                 </div>
                 <div className="modal-body">
                 <WarningAmberIcon style={{ color: '#FFCC00', marginRight: '10px' }} />
