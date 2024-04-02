@@ -56,6 +56,8 @@ electron-rebuild
 ```bash
 .\node_modules\.bin\electron-rebuild.cmd
 ```
+If the command .\node_modules\.bin\electron-rebuild.cmd does not work, please refer to https://www.electronjs.org/docs/latest/tutorial/using-native-node-modules for guidance.
+
 start
 ```bash
 npm start
