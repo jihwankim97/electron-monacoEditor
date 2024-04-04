@@ -22,7 +22,7 @@ const TabsEditor = (props) => {
   const removeTab = (tabTitle, event) => {
     event.stopPropagation();
     set_r_deleteTab(tabTitle);
-    set_r_currentTab(tabTitle);
+    // set_r_currentTab(tabTitle);
   };
 
   return (
@@ -33,7 +33,7 @@ const TabsEditor = (props) => {
             {r_tabTable.map((tab) => (
               <NavItem
                 key={tab.title}
-                active={r_currentTab === tab.title? 'true' : 'false'}
+                active={r_currentTab === tab.title? true : false}
                 onClick={() => changeTab(tab.title)}
                 ref={(el) => (tabRefs.current[tab.title] = el)}
                 onMouseEnter={() => setHoverTab(tab.title)} 
