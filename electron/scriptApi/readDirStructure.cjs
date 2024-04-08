@@ -4,7 +4,6 @@ const path = require('path');
 // 비동기 방식으로 폴더 내용을 읽어오는 함수
 function readDirectory(directoryPath) {
   return new Promise((resolve, reject) => {
-    console.log("paty:",directoryPath)
     fs.readdir(directoryPath, { withFileTypes: true }, async (err, entries) => {
       if (err) {
         console.error('Error reading directory', err);

@@ -14,19 +14,29 @@ const TreePanel = () => {
     directoryContentState
   );
 
+  const init = async () => {
+    try {
+      const projectPath = (await system.GetprojectPath()) + "../../";
+
+      const result = await system.getDirStructure(projectPath);
+      setDirectoryContent(result);
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  };
+
+  const setWatcher = async () => {
+    window.electron.startWatcher((await system.GetprojectPath()) + "../../");
+    // 파일 시스템 변경 사항 수신
+    window.electron.onFileChange((path) => {
+      init(); //구조변경시 재탐색
+    });
+  };
+
   useEffect(() => {
-    const init = async () => {
-      try {
-        const projectPath = (await system.GetprojectPath()) + "../../";
-
-        const result = await system.getDirStructure(projectPath);
-        setDirectoryContent(result);
-      } catch (error) {
-        console.error("Error:", error);
-      }
-    };
-
     init();
+
+    setWatcher();
   }, []);
 
   const handleSelect = (name) => {

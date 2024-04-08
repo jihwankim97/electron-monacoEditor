@@ -8,6 +8,13 @@ contextBridge.exposeInMainWorld("electron", {
     ipcRenderer.on("terminal-incData", (event, data) => callback(data)),
   terminalStart: () => ipcRenderer.send("terminal-start"),
   //-----------------------
+
+ //chokiWatcher 브릿지
+ onFileChange: (callback) => {
+  ipcRenderer.on('file-changed', (event, ...args) => callback(...args));
+},
+startWatcher: (path) => ipcRenderer.send('start-watcher', path),
+  
 });
 //system interface
 contextBridge.exposeInMainWorld("system", {
